@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portafolio</title>
+    <link rel="icon" href="./img/hero2.png">
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <!-- Menu Encabezado -->
+
+    <div class="contenedor-heder">
+      <header>
+        <div class="logo">
+          <a href="#">Ramon</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- Seccion Inicio -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/hero2.png" alt="" />
+          <h1>RAMON HERNANDEZ</h1>
+          <h2>Full Stack Web Developer || JavaScript || Node.js || React.js</h2>
+          <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100086279935598"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/RamonAntonio476"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/ramon-antonio-hernandez-81617623a/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Ramon181"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, mi nombre es Ramon Hernandez.</span> Soy desarrollador
+          Full-Stack con amplios conocimientos tanto en el Back-End como en el
+          Front-End. Me considero un amante de la tecnología y del código. Con
+          competencias para desarrollar diferentes proyectos web ya que trabajé
+          en el desarrollo e implementación de varios proyectos tanto de forma
+          individual como grupal.
+        </p>
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaño</strong>
+                18-05-2003
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                +573001609694
+              </li>
+              <li>
+                <strong>Email</strong>
+                ramonantonio29970476@gmail.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Bogota DC, Colombia
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>Full Stack Web Developer</span>
+              </li>
+            </ul>
+          </div>
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="cv" href="RamonCV.pdf " download="RamonCV">
+          <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section id="skills" class="skills">
+      <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Habilidad técnica</h3>
+            <div class="skill">
+              <span>JavaScript</span>
+              <div class="barra-skill">
+                <div class="progreso javascript">
+                  <span>78%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso htmlcss">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>React</span>
+              <div class="barra-skill">
+                <div class="progreso react">
+                  <span>78%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Redux</span>
+              <div class="barra-skill">
+                <div class="progreso redux">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>NodeJS</span>
+              <div class="barra-skill">
+                <div class="progreso nodejs">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>PHP</span>
+              <div class="barra-skill">
+                <div class="progreso php">
+                  <span>39%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Sequelize</span>
+              <div class="barra-skill">
+                <div class="progreso sequelize">
+                  <span>68%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Express</span>
+              <div class="barra-skill">
+                <div class="progreso express">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profesional Skill -->
+          <div class="col">
+            <h3>Habilidad Profesional</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso comunicacion">
+                  <span>68%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipó</span>
+              <div class="barra-skill">
+                <div class="progreso trabajoequipo">
+                  <span>86%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso creatividad">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso dedicacion">
+                  <span>81%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Gestión de Proyectos</span>
+              <div class="barra-skill">
+                <div class="progreso gestionproyectos">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Aprendizaje Continuo</span>
+              <div class="barra-skill">
+                <div class="progreso continuo">
+                  <span>83%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Organización</span>
+              <div class="barra-skill">
+                <div class="progreso organizacion">
+                  <span>86%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Full Stack Web Developer</h4>
+              <span class="casa">Bootcamp Soy Henry</span>
+              <span class="fecha">abr 2022 - oct 2022</span>
+              <p>
+                Henry tiene una comunidad genial que te acompaña durante todo el
+                proceso. Además, los conocimientos de las nuevas tecnologías que
+                adquirís son increíbles.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Bachillerato Academico</h4>
+              <span class="casa">Complejo educativo consuelo de rodriguez</span>
+              <span class="fecha">2014 - 2021</span>
+              <p>
+                En el bachillerato he desarrollan las habilidades que han
+                aprendido en la escuela media para adquirir una comprensión
+                profunda de álgebra y geometría. Utilizan las matemáticas para
+                resolver problemas del mundo real y comienzan a ver cómo se
+                conectan las ideas matemáticas.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia Académica</h3>
+            <div class="item der">
+              <h4>Diseñador de páginas web</h4>
+              <span class="casa">Bootcamp Soy Henry</span>
+              <span class="fecha">sep 2022 - oct 2022</span>
+              <p>
+                Proyecto Final- Techno Trade Desarrollo de una SPA en grupo de 8
+                personas, con la metodología de trabajo SCRUM. Una pagina web de
+                venta de tecnologia como computadoras telefonos y mas.
+                Utilizando React, JavaScript, Redux, HTML5, CSS3 y distintas
+                librerias para el Front, para el back utilizando NodeJs,
+                PostgreSQL, Sequelize, Express, JavaScript y distintas
+                librerias.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Programador full stack</h4>
+              <span class="casa">Bootcamp Soy Henry</span>
+              <span class="fecha">jul 2022 - ago 2022</span>
+              <p>
+                Proyecto Individual - Pokemo APP Desarrollo de una SPA (Single
+                Page Application) utilizando React para el Front End y Redux
+                como state management. Todos los componentes fueron
+                desarrollados con CSS sin uso de librerías externas. La SPA
+                consume datos de una API (
+                <a class="cv" href="https://pokeapi.co">Poke Api</a> ) a través
+                de un Bakc End desarrollado en Node.JS utilizando Express,
+                agregando nuevas funcionalidades a la API original.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <a class="cv" href="https://front-wheat-gamma.vercel.app/">
+            <div class="proyecto">
+              <img src="img/p1.png" alt="" />
+              <div class="overlay">
+                <h3>Diseño Web</h3>
+                <p>Techno Trade</p>
+              </div>
+            </div>
+          </a>
+          <a class="cv" href="https://github.com/Ramon181/PI-Food-main">
+            <div class="proyecto">
+              <img src="img/p2.png" alt="" />
+              <div class="overlay">
+                <h3>Diseño web</h3>
+                <p>FOOD APP</p>
+              </div>
+            </div>
+          </a>
+          <a class="cv" href="https://github.com/Ramon181/PI-Pokemon-main">
+            <div class="proyecto">
+              <img src="img/p3.png" alt="" />
+              <div class="overlay">
+                <h3>Diseño Web</h3>
+                <p>Pokemon APP</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <form class="col" action="correo.php" method="post">
+            <input type="text" name="nombre" placeholder="Tú Nombre" required/>
+            <input type="email" name="email" placeholder="Dirección de correo" required/>
+            <input type="text" name="asunto" placeholder="Asunto" required />
+            <textarea
+              name="mensaje"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+              required
+            ></textarea>
+            <button type="submit">
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </form>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/Ubicacion.JPG" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Bogota, Colombia
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Numero: +573001609694
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: ramonantonio29970476@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://www.facebook.com/profile.php?id=100086279935598"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/RamonAntonio476"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/ramon-antonio-hernandez-81617623a/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Ramon181"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </footer>
+    <script src="Script.js"></script>
+  </body>
+</html>
